@@ -1,35 +1,3 @@
-<?php
-// This is NOT approporate security for any of the following: user data. This should only be used
-// in situations where no non public user data is involved.
-//
-// In this case our goal is submiting a timeline post to facebook from a facebook comment feed.
-$password = "test";
-$passwordFromUser = $_GET['pass'];
-$postTarget = $_GET['postTarget'];
-
-if($passwordFromUser === $password) {
-    echo "Your in it now baby";
-
-    /* PHP SDK v4.0.0 */
-    /* make the API call */
-    // $request = new FacebookRequest(
-    //   $session,
-    //   'POST',
-    //   '/{page-id}/feed',
-    //   array (
-    //     'message' => 'This is a test message',
-    //   )
-    // );
-    // $response = $request->execute();
-    // $graphObject = $response->getGraphObject();
-    /* handle the result */
-
-}
-if($passwordFromUser !== $password) {
-    echo "Incorrect Password, please try again, or not.";
-}
-
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -158,7 +126,7 @@ if($passwordFromUser !== $password) {
 //             // console.log( obj.name === "John" );
 //             $(data).find("data").each(function () { // or "item" or whatever suits your feed
 //                 var el = $(this);
-// 				console.log(el);
+//        console.log(el);
 // //                console.log("------------------------");
 //                 console.log("message      : " + el.find("message").text());
 // //                console.log("author     : " + el.find("author").text());
@@ -167,31 +135,31 @@ if($passwordFromUser !== $password) {
 //         });
 // //        var xhr = new XMLHttpRequest();
 // //        xhr.onreadystatechange = function () {
-// //			if(xhr.readystate == 4){
-// //				console.log(xhr.responseText);
-// //			}
+// //     if(xhr.readystate == 4){
+// //       console.log(xhr.responseText);
+// //     }
 // //        }
 // //        xhr.open('GET', 'https://graph.facebook.com/comments/?ids=https://www.marchofdimes.com/facebook/wpd/partners/index.html');
 // //        xhr.send();
 
 //         $.get('https://graph.facebook.com/comments/?ids=https://www.marchofdimes.com/facebook/wpd/partners/index.html', function (data) {
-// //	        console.log(">>>" + data.data[0].id);
-// 			if(this.readystate == 4){
-// 				console.log(xhr.responseText);
-// 			}
-// //	        var obj = $.parseJSON( data );
-// //	        console.log(obj);
-// //			alert(obj.comments.data[0].id);
-// 		});
+// //         console.log(">>>" + data.data[0].id);
+//      if(this.readystate == 4){
+//        console.log(xhr.responseText);
+//      }
+// //         var obj = $.parseJSON( data );
+// //         console.log(obj);
+// //     alert(obj.comments.data[0].id);
+//    });
 
-// //		$.getJSON( "https://graph.facebook.com/comments/?ids=https://www.marchofdimes.com/facebook/wpd/partners/index.html")
-// //		  .done(function( json ) {
-// //		    console.log( "JSON Data: " + json.data[ 3 ].id );
-// //		  })
-// //		  .fail(function( jqxhr, textStatus, error ) {
-// //		    var err = textStatus + ", " + error;
-// //		    console.log( "Request Failed: " + err );
-// //		});
+// //   $.getJSON( "https://graph.facebook.com/comments/?ids=https://www.marchofdimes.com/facebook/wpd/partners/index.html")
+// //     .done(function( json ) {
+// //       console.log( "JSON Data: " + json.data[ 3 ].id );
+// //     })
+// //     .fail(function( jqxhr, textStatus, error ) {
+// //       var err = textStatus + ", " + error;
+// //       console.log( "Request Failed: " + err );
+// //   });
 
         </script>
 
